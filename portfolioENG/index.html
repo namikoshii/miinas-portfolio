@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexENG</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <script>
+                function toggleTheme() {
+                const body = document.body;
+                const isDark = body.classList.toggle("dark-mode");
+                // Guardar preferencia del usuario
+                localStorage.setItem("theme", isDark ? "dark" : "light");
+                }
+
+                // Al cargar la página, aplicar el tema guardado
+                document.addEventListener("DOMContentLoaded", () => {
+                const savedTheme = localStorage.getItem("theme");
+                if (savedTheme === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                });
+                </script>
+                <img src="../img/Sun Icon.png" width="80px" onclick="toggleTheme()">
+            </div>
+            <div class="Navigation homenav">
+                <ol>
+                    <li class="selected">Home</li>
+                    <li><a href="AboutMe.html">About me</li></a>
+                    <li><a href="IndexENG.html"><img src="../logo tremendamente increíble.png" width="60px"></li></a>
+                    <li><a href="PortfolioENG.html">Portfolio</li></a>
+                    <li><a href="Contact.html">Get in touch</a></li></a>
+                </ol>
+            </div>
+            <div class="lang">
+                <p class="selected">ENG</p> <p>|</p> <p><a href="#">ESP</a></p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="resalte">
+                <img src="https://cdna.artstation.com/p/assets/images/images/092/540/326/large/miina-minamartinez-tassa-render-finalcompo.webp?1759936942">
+            </div>
+            <div class="galleryintro">
+                <img src="https://cdna.artstation.com/p/assets/images/images/092/540/326/large/miina-minamartinez-tassa-render-finalcompo.webp?1759936942">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/092/540/479/large/miina-minamartinez-tassa-render-4.webp?1759937210">
+                <img src="https://cdna.artstation.com/p/assets/images/images/092/540/482/large/miina-minamartinez-tassa-render-5.webp?1759937216">
+            </div>
+        </section>
+        <div class="redirection">
+            <p>Check my <a href="PortfolioENG.html"><b>portfolio</b></a>!</p>
+        </div>
+        <div class="carrd">
+            <div>
+                <img class="profilephoto" src="https://cdnb.artstation.com/p/users/avatars/013/630/103/large/48bd6813ed3e4d143f2f2820333d6f20.jpg?1759239451">
+            </div>
+            <div class="carrd_info">
+                <p class="signature">miina</p>
+                <b>Mina Martínez Villalba</b>
+                <p>@miinas_room</p>
+                <br>
+                <p>2D & 3D Artist | Generalist</p>
+                <p>Currently studying at ITB</p>
+                <a href="Contact.html" class="contactbutton"><b>Contact me!</b></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <hr>
+            <small>miina © 2025</small>
+        </div>
+    </footer>
+</body>
+</html>
