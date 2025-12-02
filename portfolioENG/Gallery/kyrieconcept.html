@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[CONCEPT ART] Kyrie</title>
+    <link rel="stylesheet" href="../../css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <script>
+                function toggleTheme() {
+                const body = document.body;
+                const isDark = body.classList.toggle("dark-mode");
+                // Guardar preferencia del usuario
+                localStorage.setItem("theme", isDark ? "dark" : "light");
+                }
+
+                // Al cargar la página, aplicar el tema guardado
+                document.addEventListener("DOMContentLoaded", () => {
+                const savedTheme = localStorage.getItem("theme");
+                if (savedTheme === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                });
+                </script>
+                <img src="../../img/Sun Icon.png" width="80px" onclick="toggleTheme()">
+            </div>
+            <div class="Navigation">
+                <ol>
+                    <li><a href="../IndexENG.html">Home</li></a>
+                    <li><a href="../AboutMe.html">About me</li></a>
+                    <li><a href="../IndexENG.html"><img src="../../logo tremendamente increíble.png" width="60px"></li></a>
+                    <li><a href="../PortfolioENG.html" class="selected">Portfolio</a></li>
+                    <li><a href="../Contact.html">Get in touch</a></li></a>
+                </ol>
+            </div>
+            <div class="lang">
+                <p class="selected">ENG</p> <p>|</p> <p><a href="#">ESP</a></p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="categories">
+            <ul>
+                <li><a href="../PortfolioENG.html">All</li></a> 
+                <li>></li>
+                <li><a href="../Concept ArtENG.html">Concept Art</li></a>
+                <li>></li>
+                <li class="selected">Kyrie</li>
+            </ul>
+        </div> 
+        <section class="singleprojectsection">
+            <div class="singleprojectimg">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/092/470/565/large/miina-illust.webp?1759761611">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/092/471/111/large/miina-turnaround.webp?1759761985">
+            </div>
+            <aside class="projectdetails">
+                <div>
+                    <h2>[CONCEPT ART] Kyrie</h2>
+                    <p>Concept Art of a character that I use in different projects. 
+                    I aimed for a playful elf that enjoys fashion and thievery alike.</p>
+                </div>
+                <div>
+                    <h3>Similar works</h3>
+                    <div class="gallery">
+                    <a href="../Gallery/kyriemodel.html"><img src="https://cdnb.artstation.com/p/assets/covers/images/092/589/371/smaller_square/miina-miina-tryertjjwyjr-0.webp?1760065550"></a>
+                    <a href="../Gallery/blenderexe.html"><img src="https://cdna.artstation.com/p/assets/images/images/092/540/326/smaller_square/miina-minamartinez-tassa-render-finalcompo.webp?1759936942"></a>
+                    <a href="../Gallery/pixelartproject.html"><img src="https://cdna.artstation.com/p/assets/images/images/092/542/184/20251008113000/smaller_square/miina-miina-player-spritesheet.webp?1759941000"></a>
+                    <a href="../Gallery/doctorconcept.html"><img src="https://cdnb.artstation.com/p/assets/covers/images/093/127/183/smaller_square/miina-miina-img-0123.jpg?1761665880"></a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <div class="redirection">
+            <p>Want to know more about <a href="../AboutMe.html"><b>me</b></a>?</p>
+        </div>
+        <div class="carrd">
+            <div>
+                <img class="profilephoto" src="https://cdnb.artstation.com/p/users/avatars/013/630/103/large/48bd6813ed3e4d143f2f2820333d6f20.jpg?1759239451">
+            </div>
+            <div class="carrd_info">
+                <p class="signature">miina</p>
+                <b>Mina Martínez Villalba</b>
+                <p>@miinas_room</p>
+                <br>
+                <p>2D & 3D Artist | Generalist</p>
+                <p>Currently studying at ITB</p>
+                <a href="../Contact.html" class="contactbutton"><b>Contact me!</b></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <hr>
+            <small>miina © 2025</small>
+        </div>
+    </footer>
+</body>
+</html>
